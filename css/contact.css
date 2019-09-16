@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+form{
+	margin: 1em auto 3em; 
+	
+}
+table{
+	margin: auto;
+}
+td{
+	padding: 0 2em;
+}
+textarea{
+	resize: none;
+}
+#submit{
+	width: 100%;
+	max-width: 30px;
+	margin:auto;
+	font-weight: bold;
+	font-size: 1.5em;
+	border:none;
+	background:none;
+	box-shadow:none;
+	-webkit-transition: .8s;
+	-o-transition: .8s;
+	-moz-transition: .8s;
+	transition: .8s;
+	cursor: pointer;
+	outline: none;
+	
+}
+#submit:hover{
+	max-width: 100%;
+	background: #38E8C3;
+}
+#textarea{
+	padding-top: 2em;
+}
+#contactHeader{
+	font-size: 8em;
+	font-weight:bold;
+	color:white;
+	background:none;
+	margin-top: .7em;
+}
+.text{
+	border-bottom: 1px solid black;
+	transition: .4s;
+	
+}
+.text:hover{
+	border-bottom: 5px solid #1FB5E8;
+}
+.text:focus{
+	border-bottom: 5px solid #1FB5E8;
+	outline:none;
+}
+
+
+@media only screen and (max-width: 680px){
+	#contactHeader{
+		font-size: 4em;
+	}
+}

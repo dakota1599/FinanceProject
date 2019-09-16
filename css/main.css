@@ -1,0 +1,314 @@
+@charset "utf-8";
+/*GENERAL STUFF*/
+input[type="checkbox"]{
+  width: 20px; /*Desired width*/
+  height: 20px; /*Desired height*/
+  margin-top:.7em;
+}
+.pageHr{
+	display: block;
+    height: 1px;
+    border: 2em;
+    border-top: 3px solid #38E8C3;
+	border-radius: 10%;
+    margin: auto;
+    padding: 0; 
+	width:75%;
+	animation-name:colorChange;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+@keyframes colorChange{
+	20% {border-color: #AAFFFF;}
+	40% {border-color: #1FB5E8;}
+	60% {border-color: #004AFF;}
+	80% {border-color: #0A34FF;}
+	100% {border-color: #38E8C3;}
+}
+.titles{
+	text-align:center;
+	margin:auto;
+}
+.sectionDiv{
+	margin-top: 3.5em;
+}
+
+/*LINK COLOR CONTROL*/
+.abLinks{
+	text-decoration: none;
+	color: #004AFF;
+}
+.abLinks:hover{
+	color: #004AFF;
+}
+.abLinks:active{
+	color: #004AFF;
+}
+.abLinks:visted{
+	color: #004AFF;
+}
+.abLinks:hover{
+	color:#1FB5E8;
+}
+/*END OF LINK COLOR CONTROL*/
+
+/*END OF GENERAL STUFF*/
+
+/*NAVIGATION BAR STUFF*/
+#navBar, #sandwhich, #backButton{
+	transition: .4s;
+}
+#navBar{
+	background-color: #1FB5E8;
+	z-index: 0;
+}
+#sandwhich, #backButton{
+	z-index: -1;
+	position:absolute;
+	font-size:1.3em;
+}
+/*END OF NAVIGATION BAR STUFF*/
+
+/*HOME ROW STUFF*/
+#headerTitle{
+	font-size:7em;
+	width:7em;
+	height:1em;
+	margin:auto;
+	margin-top:1.5em;
+	text-align:center;
+	background-color:#38E8C3;
+}
+
+/*END OF HOME ROW STUFF*/
+
+/*ABOUT ROW STUFF*/
+.descHr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0; 
+}
+.descDiv{
+	height: 10em;
+	width: 40em;
+	margin:auto;
+	margin-top:2.5em;
+	overflow:auto;
+	line-height:200%;
+	border: 2px solid #AAFFFF;
+	padding:0em 1em 0em 1em;
+	background-color:#AAFFFF;
+		
+}
+
+/*LANGUAGE TABLE ROW*/
+.tableHeader{
+	margin-top: .3em;
+	text-align: center;
+	font-size: 20px;
+}
+.langTab{
+	width: 70%;
+	margin:auto;
+	background-color:lightgray;
+}
+.types{
+	background-color: #334F70;
+	color:white;
+}
+/*END OF LANGUAGE TABLE ROW.*/
+
+/*GRADUATION ROW*/
+.gradText{
+	font-size: 35px;
+	text-align:center;
+	margin-top: 1em;
+}
+/*END OF GRAUDATION ROW.*/
+
+/*END OF ABOUT ROW STUFF*/
+
+/*SERVICES ROW STUFF*/
+.cardSize{
+	width:20em;
+	margin: 1em 1em 0 1em;
+	display: inline-block;
+}
+.cardSize h1{
+	font-size:20px;
+}
+.cardSize h4{
+	font-size:15px;
+}
+.cardHeader{
+	text-align:center;
+}
+.cardFooter{
+	text-align:center;
+}
+.listFont{
+	height:13em;
+}
+.serviceList{
+	text-align:left;
+}
+/*END OF SERVICES ROW STUFF*/
+
+/*PORTFOLIO SECTION*/
+.portButton{
+	margin-top: 2em;
+	font-size: 20px;
+	background-color: #1FB5E8;
+}
+/*END OF PORTFOLIO SECTION*/
+
+/*CONTACT/RESUME SECTION*/
+#contact{
+	display:inline-block;
+	float:left;
+	margin:auto;
+	margin-top:2em;
+	margin-left: 25%;
+	background-color: #1FB5E8;
+	padding:1em;
+	width: 25%;
+	height: 17em;
+}
+#contact form{
+	font-size: 20px;
+}
+/*THE W3 CLASS FOR BUTTONS IS ACTUALLY MORE TROUBLE THAN IT'S WORTH IN THIS
+	  SCENARIO, SO I HAD TO MANUALLY CUSTOMIZE THE BUTTON WITH *MOST* OF THE 
+	  W3 ATTRIBUTES WHILE LEAVING OUT SOME SO THAT I CAN ADD ONE COOL HOVER 
+	  AFFECT.*/
+.submit{
+	font-weight:bold;
+    background: none;
+    float:none;
+    width: 100%;
+    max-width: 100px;
+    font-size: 1.5em;
+    border:none;
+    box-shadow:none;
+    -webkit-transition: .8s;
+    -o-transition: .8s;
+    -moz-transition: .8s;
+    transition: .8s;
+    cursor: pointer;
+	outline: none;
+}
+.submit:hover{
+		max-width: 100%;
+		background: #1FB5E8;
+	}
+
+#resume{
+	display:inline-block;
+	float:right;
+	margin:auto;
+	margin-top:2em;
+	margin-right:25%;
+	background-color: #38E8C3;
+	padding:1em;
+	width:25%;
+	height: 17em;
+}
+.resButton{
+	background-color: #1FB5E8;
+	font-weight: bold;
+	display: table;
+	transition: .4s;
+}
+/*END OF CONTACT/RESUME SECTION*/
+
+#footer{
+	margin-top:20em;
+}
+
+/*PORTFOLIO SECTION*/
+.portItem{
+	margin:auto;
+	margin-top:2em;
+}
+.portItem h1{
+	text-decoration:underline;
+	text-align:center;
+}
+.portItem h3, .pDesc{
+	text-align:center;
+	line-height: 1.4;
+}
+pre{
+	background: #282a36;
+	border-radius: 5px;
+	border: 2px solid #000;
+	page-break-inside: avoid;
+	font-family: monospace;
+	font-size: 15px;
+	line-height: 1.6;
+	margin:auto;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1em 1.5em;
+	display: block;
+	word-wrap: break-word;
+	width:75%;
+	height: 40em;
+	font-weight:bold;
+}
+.code{
+	margin:auto;
+}
+.nDiv{
+	margin:auto; width:75%;
+}
+/*END OF PORTFOLIO SECTION*/
+
+
+/*MEDIA QUERIES FOR RESPONSIVENESS*/
+@media only screen and (max-width: 780px){
+	#headerTitle{
+		font-size: 6.5em;
+		width: 6.5em;
+	}
+	.descDiv{
+		width: 30em;
+	}
+}
+@media only screen and (max-width: 680px){
+	#headerTitle{
+		font-size: 5.5em;
+		width: 6.5em;
+	}
+	.descDiv{
+		width: 20em;
+	}
+	#contact, #resume{
+		display: table;
+		float:none;
+		margin:auto;
+		width: 65%;
+	}
+	#contact{
+		margin-top: 1em;
+	}
+	#footer{
+		margin-top:5em;
+	}
+}
+@media only screen and (max-width: 420px) {
+	#headerTitle{
+		font-size: 4em;
+		width: 7em;
+	}
+}
+@media only screen and (max-width: 376px){
+	#headerTitle{
+		font-size: 3em;
+		width: 7.2em;
+	}
+}
